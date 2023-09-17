@@ -1,19 +1,30 @@
-header {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     border-bottom: 3px solid black;
     margin-bottom: 50px;
     background-color: aliceblue;
+    padding: 50px;
   }
 
-h1 {
+header h1 {
     font-size: 125px;
     font-family: 'Courier New', Courier, monospace;
-    margin: 75px;
+    margin-right: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: relative;
 }
 
 nav {
+    display: flex;
     margin-top: 45px;
     margin-right: 150px;
 }
@@ -25,10 +36,22 @@ nav ul {
   }
   
 nav li {
+    display: flex;
+    flex: wrap;
     margin-right: 100px;
     font-size: 32px;
     font-family: 'Courier New', Courier, monospace;
   }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    flex: wrap;
+}
+
+.nav-links li {
+    display: inline-block;
+}
 
 a {
     text-decoration: none;
@@ -41,6 +64,7 @@ a:hover {
 
 body {
     background-color: #FAF9F6;
+    margin: 0px;
 }
 
 section h2 {
@@ -77,24 +101,38 @@ footer ul li {
 }
 
 
- @media (max-width: 768px) {
-    header {
+ @media (max-width: 1400px) {
+    .main-header {
       flex-direction: column;
-      align-items: flex-start;
+      justify-content: center;
     }
-    
-    nav {
-      margin-top: 10px;
-    }
-    
-    nav ul {
-      flex-wrap: wrap;
-    }
-    
     nav li {
-      margin-right: 50px;
-      margin-bottom: 100px;
+        display: flex;
+        flex: wrap;
+        margin-right: 50px;
+        font-size: 32px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+    
+  }
+  
+
+ @media (max-width: 768px) {
+    .main-header {
+      flex-direction: column;
+      justify-content: center;
     }
+    nav ul {
+        margin-left: 150px;
+    }
+    nav li {
+        display: flex;
+        flex: wrap;
+        margin-right: 50px;
+        font-size: 24px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+    
   }
 
 .container {
