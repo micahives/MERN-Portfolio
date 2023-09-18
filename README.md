@@ -12,7 +12,7 @@ Portfolio project showcasing deployed web applications.
 
 ### Screenshot
 
-![screenshot](./assets/images/MERN-Portfolio-Snip.png)
+![screenshot](./assets/Images/MERN-Portfolio-Snip.png)
 
 ### Links
 
