@@ -10,6 +10,10 @@ Portfolio project showcasing deployed web applications.
 * HTML5
 * CSS3
 
+### Screenshot
+
+![screenshot](./assets/images/MERN-Portfolio-Snip.png)
+
 ### Links
 
 * Github [Repository](https://github.com/micahives/MERN-Portfolio)
